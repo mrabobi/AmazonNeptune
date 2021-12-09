@@ -34,7 +34,7 @@
 %load
 ```
 
-<img src="pics/load.png" alt="Load" width="500" height="150">
+<img src="/pics/load.PNG" alt="Load" width="500" height="150">
 
 
 # SELECT FIRST 100 ITEMS FROM DATASET
@@ -47,8 +47,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?s ?p ?o {?s ?p ?o} LIMIT 100
 ```
 
-
-   <img src="pics/first100.png" alt="First100" width="500" height="150">
+<img src="/pics/first100.PNG" alt="First100" width="500" height="150">
 
 
 ## Select all clases from cars dataset
@@ -63,7 +62,7 @@ SELECT ?clasa  WHERE { ?clasa rdf:type rdfs:Class } ORDER BY ?clasa
 ```
 
 
-    Tab(children=(Output(layout=Layout(max_height='600px', overflow='scroll', width='100%')), Output(layout=Layout…
+<img src="/pics/allclassesfromcars.PNG" alt="First100" width="500" height="150">
 
 
 ## Select Subject and object where predicate contains prefLabel. Order by eng column
@@ -78,7 +77,7 @@ SELECT * {?url skos:prefLabel ?eng;skos:prefLabel ?de FILTER(lang(?eng)='en' && 
 ```
 
 
-   <img src="pics/prefLabel.png" alt="PrefLabel" width="500" height="150">
+   <img src="/pics/prefLabel.PNG" alt="PrefLabel" width="500" height="150">
 
 
 ## We can store the result and reuse it 
@@ -93,7 +92,7 @@ SELECT * {?url skos:prefLabel ?eng;skos:prefLabel ?de FILTER(lang(?eng)='en' && 
 ```
 
 
-    <img src="pics/store1.png" alt="Store1" width="500" height="150">
+ <img src="/pics/store1.PNG" alt="Store1" width="500" height="150">
     
-    <img src="pics/store2.png" alt="Store2" width="500" height="150">
+ <img src="/pics/store2.PNG" alt="Store2" width="500" height="150">
 
